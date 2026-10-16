@@ -13,3 +13,4 @@
 | Blending (Crowding) | A situation where light from a nearby star mixes with the target star in the same telescope area, making it unclear which star is dimming. |
 | Verification Test | A check used to determine whether a candidate's signal comes from a planet or a false positive. |
 | Disposition | The current verification status of a candidate, such as planet candidate, confirmed planet, or false positive. |
+| TOI | TESS Object of Interest: a candidate flagged by the TESS team, identified by a number such as TOI-1234.01. This is the candidate's number the user gives the agent. |
