@@ -37,7 +37,7 @@ Requirements say what TESS Verifier must do and within what limits. Each one com
 | NFR-02 | Across at least 20 sample reports, every cited paper exists and mentions the candidate. | Must |
 | NFR-03 | Checking any test-set candidate 10 times on unchanged data gives the same verdict at least 9 times. | Should |
 | NFR-04 | A check of one candidate finishes within 10 minutes for at least 90% of the test set. | Should |
-| NFR-05 | After reading a report, at least 4 of 5 students who have never vetted a candidate can state its verdict and main reason. | Should |
+| NFR-05 | After reading a report, at least 4 of 5 non-expert students can state its verdict and main reason. | Should |
 
 ## Assumptions
 
