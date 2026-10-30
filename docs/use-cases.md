@@ -5,6 +5,7 @@ Use cases describe who uses TESS Verifier and what they do with it. They follow 
 ## Notation
 
 - **UC** (use case) - one goal an actor reaches with the system.
+- **US** (user story) - one short need of a user, written as *As a ..., I want ..., so that ...*.
 - **Priority** - the same as in the [requirements](requirements.md#notation): **Must**, **Should** or **Could**.
 - **Main success scenario** - the steps when everything goes as planned.
 - **Extensions** - what happens when a step goes differently. `2a` branches off step 2, `*a` can happen at any step. Unless an extension says the use case ends, it continues with the next step.
@@ -52,6 +53,22 @@ flowchart LR
     uc1 --- papers
     uc1 --- stars
 ```
+
+## User stories
+
+Short needs of the users. Each story maps to a use case and the requirements that cover it.
+
+| ID | Story | Use case | Requirements |
+|---|---|---|---|
+| US-01 | As a student, I want to enter a TOI number and get one verdict with a one-sentence reason, so that I know whether the candidate is likely a planet without knowing how vetting works. | UC-01 | FR-01, FR-10 |
+| US-02 | As a student, I want to see which tests were run or skipped and why, so that I understand what the verdict is based on. | UC-01 | FR-08, FR-09 |
+| US-03 | As a student, I want a *false positive* verdict to name the likely cause, so that I learn what can mimic a planet. | UC-01 | FR-12 |
+| US-04 | As an amateur astronomer, I want an *inconclusive* verdict to say what observation would settle it, so that I can decide whether to observe the candidate. | UC-01 | FR-13 |
+| US-05 | As a user, I want to be told what is wrong when my TOI number or the candidate's data cannot be found, so that I can fix the input or know why there is no report. | UC-01 | FR-02 |
+| US-06 | As a student, I want to ask follow-up questions about a report, so that I understand the terms and results I do not know. | UC-02 | FR-15 |
+| US-07 | As a researcher, I want to see the candidate's catalog status and the papers about it, so that I do not spend time on candidates that are already resolved. | UC-01 | FR-03, FR-04, FR-05 |
+| US-08 | As a researcher, I want every fact in the report to link to its source, so that I can check it myself. | UC-01 | FR-14 |
+| US-09 | As a researcher, I want to check several candidates at once, with *likely planet* candidates first, so that I can quickly pick the most promising ones. | UC-03 | FR-16 |
 
 ---
 
